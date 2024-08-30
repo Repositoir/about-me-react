@@ -1,0 +1,116 @@
+.projects-page {
+    min-height: 100vh; /* Ensure it takes at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2a74be, #e3121d);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    animation: gradientAnimation 8s ease infinite;
+    background-size: 400% 400%;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.content-wrapper {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; /* Center the content */
+}
+
+.projects-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: left;
+    max-width: 600px;
+}
+
+.project-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.github-link, .youtube-link, .playstore-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.github-icon, .youtube-icon, .playstore-icon {
+    margin-right: 8px;
+}
+
+.arrow-link-up, .arrow-link-down {
+    position: fixed; /* Use fixed positioning to keep arrows in view */
+    z-index: 3;
+    color: #fff;
+    text-decoration: none;
+}
+
+.arrow-link-up {
+    top: 20px; /* Adjust position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow-link-down {
+    bottom: 20px; /* Adjust position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow-icon-up, .arrow-icon-down {
+    font-size: 2rem;
+}
+
+.arrow-link-up:hover .arrow-icon-up, .arrow-link-down:hover .arrow-icon-down {
+    transform: scale(1.2);
+    color: rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,58 @@
+.contact-page {
+    min-height: 100vh; /* Ensure it takes at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2a74be, #e3121d);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    animation: gradientAnimation 8s ease infinite;
+    background-size: 400% 400%;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.content-wrapper {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; /* Center the content */
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.contact-link:hover {
+    color: #f0f0f0;
+}
+
+.contact-icon {
+    margin-right: 10px;
+}
