@@ -9,7 +9,7 @@ import ContactPage from './components/ContactPage';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename='/about-me-react'>
       <Routes>
         <Route path="/" element={<FrontPage />} />
         <Route path="/about" element={<AboutPage />} />
